@@ -1,5 +1,5 @@
 
-from Supplement import Utilities as Ut, Market_Data_Utilities as Mdu, Ineractive_Data_Utilities as Idu
+Supplement import Utilities as Ut, Market_Data_Utilities as Mdu, Ineractive_Data_Utilities as Idu
 
 def main():
     # Initial login - this happens immediately
