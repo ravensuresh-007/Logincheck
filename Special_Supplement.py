@@ -3,9 +3,9 @@ import time
 import asyncio
 
 
-from Supplement import Market_Data_Utilities as Mdu
-from Supplement import Ineractive_Data_Utilities as Idu
-from Supplement.Market_Data_Utilities import Fetch_Ltp
+import Market_Data_Utilities as Mdu
+import Ineractive_Data_Utilities as Idu
+
 
 
 def Custom_Trailing_Stop_Loss(Market_Xt: object, Interactive_Xt: object, ClientID: str, Instrument_Token: int,
