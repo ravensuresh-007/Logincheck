@@ -7,12 +7,12 @@ Config.read('Config.ini')
 source = Config.get('user', 'source')
 print(source)
 
-# client_id = "ATM011948"
-# client_name = Config.get(client_id, 'client_name')
+client_id = "ATM011948"
+client_name = Config.get(client_id, 'client_name')
 
-# # Extract API credentials
-# API_KEY_MarketData = Config.get(client_id, 'market_data_api_key')
-# API_SECRET_MarketData = Config.get(client_id, 'market_data_api_secret')
-# API_KEY_Interactive = Config.get(client_id, 'interactive_api_key')
-# API_SECRET_Interactive = Config.get(client_id, 'interactive_api_secret')
-# print(API_KEY_MarketData)
+# Extract API credentials
+API_KEY_MarketData = Config.get(client_id, 'market_data_api_key')
+API_SECRET_MarketData = Config.get(client_id, 'market_data_api_secret')
+API_KEY_Interactive = Config.get(client_id, 'interactive_api_key')
+API_SECRET_Interactive = Config.get(client_id, 'interactive_api_secret')
+print(API_KEY_MarketData)
