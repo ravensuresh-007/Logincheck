@@ -1,7 +1,7 @@
 import configparser
 
 Config = configparser.ConfigParser()
-Config.read('config.ini')
+Config.read('Config.ini')
 
 # Get user configuration
 source = Config.get('user', 'source')
