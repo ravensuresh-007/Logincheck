@@ -1,18 +1,9 @@
-import configparser
+import Utilities as Ut, Market_Data_Utilities as Mdu, Ineractive_Data_Utilities as Idu
 
-Config = configparser.ConfigParser()
-Config.read('Config.ini')
 
-# Get user configuration
-source = Config.get('user', 'source')
-print(source)
-
-client_id = "ATM011948"
-client_name = Config.get(client_id, 'client_name')
-
-# Extract API credentials
-API_KEY_MarketData = Config.get(client_id, 'market_data_api_key')
-API_SECRET_MarketData = Config.get(client_id, 'market_data_api_secret')
-API_KEY_Interactive = Config.get(client_id, 'interactive_api_key')
-API_SECRET_Interactive = Config.get(client_id, 'interactive_api_secret')
-print(API_KEY_MarketData)
+print("Performing initial login...")
+Connect_Dict = Ut.Initial_Login_Modified("ATM011948")
+Market_Xt = Connect_Dict['Market_Xt']
+Interactive_Xt = Connect_Dict['Interactive_Xt']
+ClientID = Connect_Dict['ClientID']
+print("Login successful")
