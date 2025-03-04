@@ -5,6 +5,7 @@ Config.read('Config.ini')
 
 # Get user configuration
 source = Config.get('user', 'source')
+client_id = "ATM110948"
 client_name = Config.get(client_id, 'client_name')
 
 # Extract API credentials
